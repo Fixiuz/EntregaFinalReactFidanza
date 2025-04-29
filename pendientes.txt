@@ -1,0 +1,11 @@
+-Navbar
+     - acomodar el alto
+     - Carrito dinamico
+Secciones
+Sepaparar productos por secciones? 
+
+Footer 
+
+Contacto
+    -Formulario de Contacto
+    

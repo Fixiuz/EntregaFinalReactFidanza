@@ -54,7 +54,7 @@ function ItemDetail(){
 
             :
             
-            <div className='productos'>
+            <div className='productosDetail'>
                 
                 <h2>{producto.nombre}</h2>
                 

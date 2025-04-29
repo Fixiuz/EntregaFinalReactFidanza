@@ -24,10 +24,10 @@ function ItemDetailContainer() {
         loading ? 
             <Loader /> 
             : 
-            <div className='item-detail-container'>
-                <ItemDetail producto={producto} />
+            
+            <ItemDetail producto={producto} />
 
-            </div>
+            
             
     );
 }
