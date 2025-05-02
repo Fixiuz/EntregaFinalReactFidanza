@@ -1,0 +1,38 @@
+/* src/components/Cart/Cart.css */
+.cart-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .vaciar-btn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .vaciar-btn:hover {
+    background-color: #e74c3c;
+  }
+  .cart-item-img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  

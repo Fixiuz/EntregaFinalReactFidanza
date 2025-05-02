@@ -6,7 +6,19 @@
     background-color: #7a7a7a; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     font-family: 'Poppins', sans-serif;
-    position: relative;
+
+    position: fixed;       /* Que se quede arriba fijo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;         /* Más alto que el sidebar */
+
+    height: 80px;          /* Altura explícita para evitar solapamientos */
+}
+
+/* Este wrapper es opcional si querés empujar el contenido principal hacia abajo */
+.main-content {
+    margin-top: 80px;      /* Empuja todo el contenido por debajo del navbar */
 }
 
 /* Logo */

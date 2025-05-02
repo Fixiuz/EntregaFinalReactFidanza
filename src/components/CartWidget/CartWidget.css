@@ -28,3 +28,13 @@
     font-weight: bold;
     margin: 0;
 }
+.ver-carrito-btn {
+    margin-left: 10px;
+    padding: 4px 8px;
+    
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  

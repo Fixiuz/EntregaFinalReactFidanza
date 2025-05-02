@@ -5,7 +5,7 @@ import CartWidget from '../CartWidget/CartWidget';
 import React from 'react';
 import { Link } from 'react-router';
 
-function NavBar() {
+function NavBar({ toggleSidebar }) {
   return (
     <header className='menu'>
       <div className='logo-container'>
@@ -23,6 +23,7 @@ function NavBar() {
         </ul>
       </nav>
       <div className='carrito'>
+        
         <Link to="/carrito"><CartWidget/></Link>
       </div>
       

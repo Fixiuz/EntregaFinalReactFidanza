@@ -1,78 +1,42 @@
-
-import './ItemDetail.css'
+import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
-import {useEffect, useState} from 'react';
-import { Link, useParams } from 'react-router';
-import fetchData from '../../fetchData';
-import Loader from '../Loader/Loader';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useAppContext } from '../../context/context';
 
+function ItemDetail({ producto }) {
+  const [contador, setContador] = useState(1);
+  const { agregarAlCarrito } = useAppContext();
 
-function ItemDetail(){
-    
-    const { id } = useParams();
-    // console.log(producto);
-  
-    const [loading, setLoading] = useState(true);
-    const [producto, setProducto] = useState(null);
-    const [contador, setContador] = useState(1); 
-    // const {nombre,precio,descripcion,stock,categoria} = producto;
-    
-    
-    function agregarAlCarrito(prod){
-        const nuevoProducto = {
-            ...prod,
-            cantidad:contador,
-        };
-        console.log('Vas a agregar ', nuevoProducto);
-        setContador(1);
-        
-    };
-    
+  // Si no se ha recibido el producto aún, muestra un mensaje de carga
+  if (!producto) return <p>Cargando detalle del producto...</p>;
 
-    useEffect(()=>{
-        fetchData()
-        .then(response => {
-            
-            const productoAMostrar = response.find(el => el.id === parseInt(id));
-            setProducto(productoAMostrar);
+  return (
+    <div className='productosDetail'>
+      <h2>{producto.nombre}</h2>
+      <div className='imagenDetail'>
+        <img src={producto.img} alt={producto.nombre} />
+      </div>
+      <p>{producto.descripcion}</p>
+      <p>Precio: <b>${producto.precio}</b></p>
+      <p>Categoría: {producto.categoria}</p>
+      <p>Quedan {producto.stock} disponibles</p>
 
-            // console.log(parseInt(id));
-            // setTodosLosProductos(response);
-              
-            setTimeout(() => {
-                setLoading(false);
-            }, 500); 
-            
+      <ItemCount
+        stock={producto.stock}
+        contador={contador}
+        setContador={setContador}
+      />
 
+      <button className='btn' onClick={() => agregarAlCarrito(producto, contador)}>
+        Agregar al carrito
+      </button>
 
-        }) 
-        .catch(error => console.error(error))
-    },[]);    
-    return (
-        loading ?
-            <Loader />
+      <Link to='/'>
+        <button className='btn'>Volver al inicio</button>
+      </Link>
+    </div>
+  );
+}
 
-            :
-            
-            <div className='productosDetail'>
-                
-                <h2>{producto.nombre}</h2>
-                
-                <div className='imagenDetail'>
-                    <img src={`/assets/Imgs/${producto.img}`} alt={producto.nombre} />
-                </div>
-                <p>{producto.descripcion}</p>
-                <p>Precio: <b>${producto.precio}</b></p>
-                <p>Categoria : {producto.categoria}</p>
-                
-                
-                <p>Quedan {producto.stock} disponibles</p>                
-                <ItemCount stock = {producto.stock} contador = {contador} setContador = {setContador}/>   
-                <button className='btn' onClick={()=> agregarAlCarrito(producto)}>Agregar al carrito</button>
-                <Link to={'/'}>
-                    <button className='btn'>Volver al incio </button>
-                </Link>
-            </div> 
-    );
-  };
-export default ItemDetail
+export default ItemDetail;

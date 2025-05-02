@@ -1,0 +1,57 @@
+.factura-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .factura-container h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .factura-container p,
+  .factura-container li {
+    color: #444;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .factura-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-descargar,
+  .btn-volver {
+    margin: 1rem 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-descargar {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-descargar:hover {
+    background-color: #218838;
+  }
+  
+  .btn-volver {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .btn-volver:hover {
+    background-color: #5a6268;
+  }
+  

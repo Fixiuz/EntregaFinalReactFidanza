@@ -1,41 +1,25 @@
-import './Item.css'
-import {Link} from 'react-router';
-// import {useState} from 'react';
+import './Item.css';
+import { Link } from 'react-router-dom'; // Asegúrate de usar 'react-router-dom'
+import { useAppContext } from '../../context/context';
 
+function Item({ producto }) {
+  const { id, nombre, precio, stock, img } = producto;
+  const { agregarAlCarrito } = useAppContext();
 
-function Item({producto}){
-    // console.log(producto);
-    const {id,nombre,precio,descripcion,stock,categoria,img} = producto;
-    // const [contador, setContador] = useState(0);
-    
+  return (
+    <div className='productos'>
+      <h2>{nombre}</h2>
+      <img src={img} alt={nombre} />
+      <p>${precio}</p>
+      <p>Quedan {stock} disponibles</p>
+      <button className='btn' onClick={() => agregarAlCarrito(producto, 1)}>
+        Agregar al carrito
+      </button>
+      <Link to={`/detalle/${id}`}>
+        <button className='btn'>Ver detalle</button>
+      </Link>
+    </div>
+  );
+}
 
-    function agregarAlCarrito(prod){
-        const nuevoProducto = {
-            ...prod,
-            cantidad:1
-        };
-        
-     
-        console.log('Vas a agregar ', nuevoProducto);
-        
-    }
-    
-    return (
-        <div className='productos'>
-            
-            <h2>{nombre}</h2>
-            
-            <img  src={`/assets/Imgs/${img}`} alt={nombre} />
-            
-            
-            <p>${precio}</p>
-            <p>Quedan {stock} disponibles</p> 
-            <button className='btn'onClick={()=> agregarAlCarrito(producto)}>Agregar al carrito</button>
-            <Link to={`/detalle/${id}`}>
-                <button className='btn'>Ver detalle </button>
-            </Link>
-        </div> 
-    );
-  };
-export default Item
-
+export default Item;

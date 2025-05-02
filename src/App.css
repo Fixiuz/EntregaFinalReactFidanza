@@ -3,6 +3,7 @@
     padding: 20px;
     background-color: #f1f1f1;
     min-height: calc(100vh - 160px); /* calcula menos navbar + footer */
+    padding-right: 250px;
   }
   .menu-item-custom {
     color: black;

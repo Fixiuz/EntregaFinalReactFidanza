@@ -1,0 +1,112 @@
+.cart-sidebar {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 300px;
+    height: calc(100vh - 80px);
+    background-color: #f8f8f8;
+    border-left: 1px solid #ccc;
+    padding: 1rem;
+    overflow-y: auto;
+    z-index: 999;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  
+    /* Animación de entrada */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animación solo en la primera apertura */
+.cart-sidebar.open {
+    transform: translateX(0);
+    animation: slideIn 0.3s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Animación de cierre */
+.cart-sidebar.closing {
+    transform: translateX(100%);
+    animation: slideOut 0.3s ease-in-out forwards;
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.cart-sidebar h4 {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.cart-sidebar-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.cart-sidebar-item img.mini-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+}
+
+.cart-sidebar-item p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.cart-sidebar-item button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 4px 8px;
+    margin: 0 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.cart-sidebar-item button:hover {
+    background-color: #ccc;
+}
+
+.cart-sidebar .ver-carrito {
+    display: block;
+    width: 100%;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cart-sidebar .ver-carrito:hover {
+    background-color: #222;
+}
