@@ -9,8 +9,7 @@ function NavBar({ toggleSidebar }) {
   return (
     <header className='menu'>
       <div className='logo-container'>
-        <img className='logo' src='..\public\assets\logos\Logo_k3D.png' alt="logo" />
-      </div>
+        <img className='logo' src='https://res.cloudinary.com/dwjqk2hcf/image/upload/v1746134740/Logo_k3D_bmvkks.png' alt="logo" />      </div>
       <nav className='menu-container' > 
         
         <ul className='itemMenu'>
