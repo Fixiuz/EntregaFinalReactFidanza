@@ -14,11 +14,9 @@ function NavBar({ toggleSidebar }) {
         
         <ul className='itemMenu'>
           <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/categoria/llaveros">Llaveros</Link></li>
-          <li><Link to="/categoria/figuras">Figuras</Link></li>
-          <li><Link to="/categoria/utilidades">Utilidades</Link></li>
-          <li><Link to="/categoria/vehiculos">Vehiculos</Link></li>
-
+          <li><Link to="/laboratorio">Laboratorio</Link></li>
+          <li><Link to="/quienesSomos">Quienes Somos</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
         </ul>
       </nav>
       <div className='carrito'>

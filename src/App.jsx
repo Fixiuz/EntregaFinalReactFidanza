@@ -11,8 +11,9 @@ import { ContextProvider } from './context/context';
 import CartSidebar from './components/CartSidebar/CartSidebar';
 import CheckoutForm from './components/CheckoutForm/CheckoutForm';
 import Factura from './components/Factura/Factura';
-
-
+import Laboratorio from './components/Laboratorio/Laboratorio';
+import QuienesSomos from './components/QuienesSomos/QuienesSomos';
+import Contacto from './components/Contacto/Contacto';
 
 
 const listaPrueba = []
@@ -45,6 +46,9 @@ function App() {
             <Route path="/carrito" element={<Cart />} />
             <Route path="/factura/:id" element={<Factura />} />
             <Route path="/checkout" element={<CheckoutForm />} />
+            <Route path="/laboratorio" element={<Laboratorio />} />
+            <Route path="/quienesSomos" element={<QuienesSomos />} />
+            <Route path="/contacto" element={<Contacto />} />
           </Routes> 
         </div>
         <Footer/>

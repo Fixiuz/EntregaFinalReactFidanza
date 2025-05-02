@@ -68,20 +68,18 @@ function MySidebar({ isSidebarOpen, closeSidebar }) {
           <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Inicio</Link>
         </MenuItem>
         <MenuItem icon={<FaLaptop />} onClick={closeSidebar}>
-          <Link to="/categoria/electronica" style={{ color: 'inherit', textDecoration: 'none' }}>Electrónica</Link>
+          <Link to="/categoria/llaveros" style={{ color: 'inherit', textDecoration: 'none' }}>Llaveros</Link>
         </MenuItem>
         <MenuItem icon={<FaTshirt />} onClick={closeSidebar}>
-          <Link to="/categoria/moda" style={{ color: 'inherit', textDecoration: 'none' }}>Moda</Link>
+          <Link to="/categoria/figuras" style={{ color: 'inherit', textDecoration: 'none' }}>Figuras</Link>
         </MenuItem>
         <MenuItem icon={<FaCouch />} onClick={closeSidebar}>
-          <Link to="/categoria/hogar" style={{ color: 'inherit', textDecoration: 'none' }}>Hogar</Link>
+          <Link to="/categoria/utilidades" style={{ color: 'inherit', textDecoration: 'none' }}>Utilidades</Link>
         </MenuItem>
         <MenuItem icon={<FaBasketballBall />} onClick={closeSidebar}>
-          <Link to="/categoria/deportes" style={{ color: 'inherit', textDecoration: 'none' }}>Deportes</Link>
+          <Link to="/categoria/vehiculos" style={{ color: 'inherit', textDecoration: 'none' }}>Vehiculos</Link>
         </MenuItem>
-        <MenuItem icon={<FaPuzzlePiece />} onClick={closeSidebar}>
-          <Link to="/categoria/juguetes" style={{ color: 'inherit', textDecoration: 'none' }}>Juguetes</Link>
-        </MenuItem>
+       
       </Menu>
     </Sidebar>
   );
