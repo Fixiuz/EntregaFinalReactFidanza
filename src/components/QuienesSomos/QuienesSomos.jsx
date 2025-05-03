@@ -12,13 +12,13 @@ function QuienesSomos() {
           </p>
         </div>
         <div className="qs-imagen">
-          <img src="https://res.cloudinary.com/tuusuario/image/upload/v1/qs1.jpg" alt="Inicios del proyecto" />
+          <img src="https://res.cloudinary.com/dwjqk2hcf/image/upload/v1746246911/3ddd_qzvwsh.png" alt="Inicios del proyecto" />
         </div>
       </div>
 
       <div className="quienes-somos-bloque">
         <div className="qs-imagen">
-          <img src="https://res.cloudinary.com/tuusuario/image/upload/v1/qs2.jpg" alt="Equipo de trabajo" />
+          <img src="https://res.cloudinary.com/dwjqk2hcf/image/upload/v1746246910/Laboratorio3d1_x4um2s.png" alt="Equipo de trabajo" />
         </div>
         <div className="qs-texto">
           <h2>¿Quiénes somos?</h2>
@@ -36,7 +36,7 @@ function QuienesSomos() {
           </p>
         </div>
         <div className="qs-imagen">
-          <img src="https://res.cloudinary.com/tuusuario/image/upload/v1/qs3.jpg" alt="Futuro del emprendimiento" />
+          <img src="https://res.cloudinary.com/dwjqk2hcf/image/upload/v1746246910/granja3d_lwk7px.jpg" alt="Futuro del emprendimiento" />
         </div>
       </div>
     </div>

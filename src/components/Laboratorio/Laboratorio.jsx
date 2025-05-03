@@ -14,13 +14,13 @@ function Laboratorio() {
           </p>
         </div>
         <div className="bloque-imagen">
-          <img src="https://res.cloudinary.com/tuusuario/image/upload/v1/laboratorio1.jpg" alt="Impresora 3D trabajando" />
+          <img src="https://res.cloudinary.com/dwjqk2hcf/image/upload/v1746246910/1714389062589_pffrka.jpg" alt="Impresora 3D trabajando" />
         </div>
       </section>
 
       <section className="bloque">
         <div className="bloque-imagen">
-          <img src="https://res.cloudinary.com/tuusuario/image/upload/v1/laboratorio2.jpg" alt="Piezas impresas" />
+          <img src="https://res.cloudinary.com/dwjqk2hcf/image/upload/v1746246910/curso-impresion-3D-scaled-e1639480417574_zktxml.jpg" alt="Piezas impresas" />
         </div>
         <div className="bloque-texto">
           <h2>Un espacio ordenado</h2>
@@ -38,13 +38,13 @@ function Laboratorio() {
           </p>
         </div>
         <div className="bloque-imagen">
-          <img src="https://res.cloudinary.com/tuusuario/image/upload/v1/laboratorio3.jpg" alt="Calibración" />
+          <img src="https://res.cloudinary.com/dwjqk2hcf/image/upload/v1746246910/hq720_d8ul3f.jpg" alt="Calibración" />
         </div>
       </section>
 
       <section className="bloque">
         <div className="bloque-imagen">
-          <img src="https://res.cloudinary.com/tuusuario/image/upload/v1/laboratorio4.jpg" alt="Vista general del laboratorio" />
+          <img src="https://res.cloudinary.com/dwjqk2hcf/image/upload/v1746246911/jgigrzelv7n41_andfcy.webp" alt="Vista general del laboratorio" />
         </div>
         <div className="bloque-texto">
           <h2>Pequeño pero poderoso</h2>

@@ -1,8 +1,12 @@
 import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
-import { FaHome, FaLaptop, FaTshirt, FaCouch, FaBasketballBall } from 'react-icons/fa';
+import { FaHome, FaLaptop, FaTshirt, FaCouch, FaBasketballBall,FaTools } from 'react-icons/fa';
+import { GiKeyring } from "react-icons/gi";
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './Sidebar.css';
+import { MdOutlineSmartToy } from "react-icons/md";
+import { PiCarProfileDuotone } from "react-icons/pi";
+
 
 
 function MySidebar({ isSidebarOpen, closeSidebar }) {
@@ -80,16 +84,16 @@ function MySidebar({ isSidebarOpen, closeSidebar }) {
         <MenuItem icon={<FaHome />} onClick={closeSidebar}>
           <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Inicio</Link>
         </MenuItem>
-        <MenuItem icon={<FaLaptop />} onClick={closeSidebar}>
+        <MenuItem icon={<GiKeyring />} onClick={closeSidebar}>
           <Link to="/categoria/llaveros" style={{ color: 'inherit', textDecoration: 'none' }}>Llaveros</Link>
         </MenuItem>
-        <MenuItem icon={<FaTshirt />} onClick={closeSidebar}>
+        <MenuItem icon={<MdOutlineSmartToy />} onClick={closeSidebar}>
           <Link to="/categoria/figuras" style={{ color: 'inherit', textDecoration: 'none' }}>Figuras</Link>
         </MenuItem>
-        <MenuItem icon={<FaCouch />} onClick={closeSidebar}>
+        <MenuItem icon={<FaTools />} onClick={closeSidebar}>
           <Link to="/categoria/utilidades" style={{ color: 'inherit', textDecoration: 'none' }}>Utilidades</Link>
         </MenuItem>
-        <MenuItem icon={<FaBasketballBall />} onClick={closeSidebar}>
+        <MenuItem icon={<PiCarProfileDuotone />} onClick={closeSidebar}>
           <Link to="/categoria/vehiculos" style={{ color: 'inherit', textDecoration: 'none' }}>Vehículos</Link>
         </MenuItem>
       </Menu>

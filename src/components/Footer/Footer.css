@@ -31,9 +31,10 @@
   
   .footer-stack h4,
   .footer-tools h4 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 1.2rem;
     color: #ddd;
+    font-weight: bold;
   }
   
   .footer-stack ul,
@@ -54,4 +55,30 @@
     font-size: 0.9rem;
     color: #777;
   }
+  .stack-grid,
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 0.5rem 1rem;
+    list-style-type: none;
+    padding: 0;
+    
+  }
+  
+  .stack-grid li,
+  .tools-grid li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    ;
+  }
+  
+  /* Títulos que ocupan las 2 columnas */
+  .grid-title {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+  }
+  
   

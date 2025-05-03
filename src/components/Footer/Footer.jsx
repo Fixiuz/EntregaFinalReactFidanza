@@ -11,24 +11,35 @@ function Footer() {
         </div>
 
         <div className="footer-stack">
-          <h4>Stack Tecnológico</h4>
-          <ul>
+          
+          <h4 className="grid-title">Stack Tecnológico</h4>
+
+          <ul className='stack-grid'>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>React</li>
+            <li>Sass / SCSS</li>
+            <li>Next.js</li>
+            <li>Firebase</li>
+            <li>Node.js</li>
+            <li>Bootstrap</li>
+            <li>Tailwind CSS</li>
           </ul>
         </div>
 
         <div className="footer-tools">
-          <h4>Herramientas</h4>
-          <ul>
-            <li>Git</li>
-            <li>GitHub</li>
+          <h4 className="grid-title">Herramientas</h4>
+          <ul className="tools-grid">
+            <li>Visual Studio Code</li>
+            <li>Vercel</li>
+            <li>Netlify</li>
+            <li>Trello</li>
             <li>Figma</li>
-            <li>Firebase</li>
+            <li>npm / yarn</li>
+            <li>Git / GitHub</li>
           </ul>
-        </div>
+        </div>        
 
       </div>
 

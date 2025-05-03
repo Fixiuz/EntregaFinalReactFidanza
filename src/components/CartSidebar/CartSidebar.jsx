@@ -1,20 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { useAppContext } from '../../context/context';
+import { useLocation, Link } from 'react-router-dom';
 import './CartSidebar.css';
-import { Link } from 'react-router-dom';
 
 function CartSidebar() {
   const [hasOpened, setHasOpened] = useState(false);
   const { carrito, actualizarCantidad, eliminarProducto } = useAppContext();
+  const location = useLocation();
 
   useEffect(() => {
-    // Asegúrate de que la animación solo ocurra una vez
+    // Si entro a la ruta /carrito, cierro el sidebar
+    if (['/carrito', '/laboratorio', '/quienesSomos', '/contacto'].includes(location.pathname)) {
+      setHasOpened(false);
+      return;
+    }
+
+    // Si hay productos y nunca se abrió, lo abro
     if (carrito.length > 0 && !hasOpened) {
       setHasOpened(true);
     }
-  }, [carrito, hasOpened]);
+  }, [carrito, hasOpened, location.pathname]);
 
-  if (carrito.length === 0) return null;
+  if (!hasOpened || carrito.length === 0) return null;
 
   return (
     <div className={`cart-sidebar ${hasOpened ? 'open' : ''}`}>
@@ -22,7 +29,6 @@ function CartSidebar() {
       <ul>
         {carrito.map(item => (
           <li key={item.id} className="cart-sidebar-item">
-            {/* Usa directamente item.img */}
             <img src={item.img} alt={item.nombre} className="mini-img" />
             <div>
               <p>{item.nombre}</p>
@@ -40,7 +46,7 @@ function CartSidebar() {
 
       <div style={{ textAlign: 'center', marginTop: '1rem' }}>
         <Link to="/carrito">
-          <button className="ver-carrito">Ver carrito completo</button>        
+          <button className="ver-carrito">Ver carrito completo</button>
         </Link>
       </div>
     </div>
