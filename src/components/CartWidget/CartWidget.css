@@ -2,18 +2,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(203, 206, 218);
+    background-color: rgb(180, 183, 200);
     border-radius: 10px;
     padding: 10px;
     margin-right: 20px;
     flex: 0 0 auto; 
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.3s ease;
+    color: #0159B8;
 }
 
 .cart:hover {
-    background-color: rgb(180, 183, 200); 
+    background-color: whitesmoke; 
     transform: scale(1.05); 
+    border: 1.5px solid #0159B8;
+    color: #0159B8 ;
 }
 
 .cart img {
@@ -21,13 +24,23 @@
     width: auto;
     margin-right: 5px; 
 }
-
+.cart a {
+    color: #0159B8;
+    text-decoration: none; 
+    font-weight: bold;
+}
+.cart a:hover {
+    color: #0159B8; 
+    text-decoration: none; 
+}
 .cart p {
-    color: rgb(99, 22, 22);
+    color: #0159B8;
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
+    margin-left: 5px;
 }
+
 .ver-carrito-btn {
     margin-left: 10px;
     padding: 4px 8px;
@@ -37,4 +50,6 @@
     border-radius: 4px;
     text-decoration: none;
   }
+
+
   

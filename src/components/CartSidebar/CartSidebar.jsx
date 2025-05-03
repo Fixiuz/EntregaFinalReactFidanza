@@ -40,7 +40,7 @@ function CartSidebar() {
 
       <div style={{ textAlign: 'center', marginTop: '1rem' }}>
         <Link to="/carrito">
-          <button>Ver carrito completo</button>
+          <button className="ver-carrito">Ver carrito completo</button>        
         </Link>
       </div>
     </div>

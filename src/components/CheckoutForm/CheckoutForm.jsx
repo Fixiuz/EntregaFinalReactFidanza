@@ -26,7 +26,7 @@ function CheckoutForm() {
   };
 
   return (
-    <div className="checkout-container">
+    <div className="checkout-form-container">
       <h2>Finalizar compra</h2>
       <form onSubmit={handleSubmit} className="checkout-form">
         <label>Nombre:</label>

@@ -22,11 +22,13 @@ function ItemDetail({ producto }) {
       <p>Categoría: {producto.categoria}</p>
       <p>Quedan {producto.stock} disponibles</p>
 
-      <ItemCount
-        stock={producto.stock}
-        contador={contador}
-        setContador={setContador}
-      />
+      <div className='contador'>
+        <ItemCount
+          stock={producto.stock}
+          contador={contador}
+          setContador={setContador}
+        />
+      </div>
 
       <button className='btn' onClick={() => agregarAlCarrito(producto, contador)}>
         Agregar al carrito

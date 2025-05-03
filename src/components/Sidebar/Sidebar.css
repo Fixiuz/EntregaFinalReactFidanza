@@ -1,47 +1,53 @@
+.my-sidebar {
+  background: linear-gradient(to right, #155d9e 0%, #155d9e 10%, #13286d 50%, #155d9e 90%, #155d9e 100%);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #ddd;
+  color: #ffffff;
+}
+
 /* Estilos generales del Sidebar */
 .sidebar-search-container {
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* Estilos del input de búsqueda */
-  .sidebar-search-input {
-    width: 100%;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Estilo al enfocar el input */
-  .sidebar-search-input:focus {
-    border-color: #666;
-    box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
-  }
-  
-  /* Estilos de los links dentro de los MenuItem */
-  .ps-menuitem-root a {
-    color: inherit; /* hereda el color, definido en menuItemStyles */
-    text-decoration: none;
-    display: block;
-    width: 100%;
-  }
-  
-  /* Ajuste para cuando el sidebar está activo o hover */
-  .ps-menuitem-root:hover a,
-  .ps-menuitem-root.ps-active a {
-    color: #ffffff; /* blanco en hover y activo */
-  }
-  
-  /* Mejorar la transición al hacer hover */
-  .ps-menuitem-root {
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  /* (Opcional) Puedes hacer que todo el menú tenga un padding más agradable */
-  .ps-menu-root {
-    padding: 0 0.5rem;
-  }
-  
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos del input de búsqueda */
+.sidebar-search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo al enfocar el input */
+.sidebar-search-input:focus {
+  border-color: #666;
+  box-shadow: 0 0 5px rgba(100, 100, 100, 0.3);
+}
+
+/* Links en MenuItem */
+.ps-menuitem-root a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.ps-menuitem-root:hover a,
+.ps-menuitem-root.ps-active a {
+  color: #ffffff;
+}
+
+.ps-menuitem-root {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ps-menu-root {
+  padding: 0 0.5rem;
+}

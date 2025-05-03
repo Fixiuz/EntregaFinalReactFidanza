@@ -14,6 +14,9 @@ import Factura from './components/Factura/Factura';
 import Laboratorio from './components/Laboratorio/Laboratorio';
 import QuienesSomos from './components/QuienesSomos/QuienesSomos';
 import Contacto from './components/Contacto/Contacto';
+import Buscar from './components/Buscar/Buscar';
+
+
 
 
 const listaPrueba = []
@@ -49,6 +52,9 @@ function App() {
             <Route path="/laboratorio" element={<Laboratorio />} />
             <Route path="/quienesSomos" element={<QuienesSomos />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/buscar" element={<Buscar />} />
+
+
           </Routes> 
         </div>
         <Footer/>

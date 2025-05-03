@@ -74,6 +74,13 @@ export const ContextProvider = (props) => {
       if (onError) onError(error);
     }
   };
+
+  const buscarProductos = (termino) => {
+  return productos.filter(p =>
+    p.nombre.toLowerCase().includes(termino.toLowerCase())
+  );
+};
+  
   return (
     <AppContext.Provider value={{
       carrito,
@@ -83,7 +90,8 @@ export const ContextProvider = (props) => {
       vaciarCarrito,
       actualizarCantidad,
       eliminarProducto,
-      crearOrden 
+      crearOrden,
+      buscarProductos, 
     }}>
       {props.children}
     </AppContext.Provider>

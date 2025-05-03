@@ -12,7 +12,7 @@ function CartWidget(){
       
       <div className='cart'>
         <TbShoppingCart /><p>{carrito.length }</p>
-        <Link to="/carrito" className="ver-carrito-btn">
+        <Link to="/carrito" className="ver-carrito-btn" style={{ textDecoration: 'none' }}>
           Ver Carrito
         </Link>
 

@@ -5,6 +5,7 @@
     /* background-color: tomato; */
     /* justify-content: center;     */
     
+    
 }
 .items .btn {
     
@@ -17,4 +18,12 @@
 .botonCompleto {
     display: flex;
     flex-direction: column;
+}
+.botonCompleto .items p {
+    margin-top: 20px;
+    font-size: 1.5 rem;
+    color: #143074;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
